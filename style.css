@@ -1,0 +1,441 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.top-bar {
+  background-color: #1f1464;
+  color: white;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.top-bar select {
+  margin-left: 10px;
+  padding: 4px;
+}
+
+.top-nav a {
+  color: white;
+  margin: 0 8px;
+  text-decoration: none;
+}
+
+.email-btn {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  text-align: center;
+  background-color: white;
+}
+
+.main-header img {
+  height: 80px;
+  margin-right: 20px;
+}
+
+.title-block h1 {
+  font-size: 24px;
+  margin: 5px 0;
+  color: #222;
+}
+
+.title-block h2 {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+}
+
+.admission-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.box {
+  color: white;
+  padding: 15px;
+  width: 220px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.box.blue {
+  background-color: #0026ff;
+}
+
+.box.red {
+  background-color: #c1003f;
+}
+
+.box.green {
+  background-color: #008061;
+}
+
+.main-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #fff;
+  padding: 15px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.main-menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  margin: 10px 15px;
+}
+
+.marquee {
+  background-color: #fff8dc;
+  color: black;
+  padding: 8px;
+  font-size: 15px;
+}
+
+/* ========== Welcome Section ========== */
+
+.welcome-section {
+  display: grid;
+  grid-template-columns: 300px 1fr 270px;
+  gap: 20px;
+  padding: 30px;
+  background-color: #fff;
+  align-items: flex-start;
+}
+
+.welcome-section .left img {
+  width: 300px;
+  height: 450px;
+  border: 1px solid #ccc;
+  object-fit: cover;
+  display: block;
+}
+
+.welcome-section .middle {
+  min-width: 300px;
+}
+
+.welcome-section .middle h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.welcome-section .middle p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.welcome-section .middle ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.welcome-section .right {
+  min-width: 250px;
+}
+
+.news-box {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.news-box h3 {
+  background-color: orange;
+  color: white;
+  padding: 5px;
+  margin: 0 -10px 10px;
+}
+
+.news-box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.news-box p {
+  font-size: 14px;
+  color: #333;
+}
+
+.exam-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #008080;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.campus-section {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f5f5f5;
+}
+.campus-section h2 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+.campus-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.campus-card {
+  width: 240px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.campus-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.campus-card h3 {
+  margin: 16px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.hero-banner {
+  background-image: url('https://www.annauniv.edu/images/main-slider/slide1.jpeg'); /* Replace with actual image path */
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  padding: 0 20px;
+}
+.notification-buttons {
+  background-color: #eee;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.notification-buttons .btn {
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  min-width: 220px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.red { background-color: #c62828; }
+.blue { background-color: #039be5; }
+.maroon { background-color: #6a1b9a; }
+.orange { background-color: #f44336; }
+
+
+
+.stats-section {
+  background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8NFRUWFhUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAABAAIDB//EABcQAQEBAQAAAAAAAAAAAAAAAAABEQL/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A8VkMUIJJAkkARxUGU0AZJhBnEaLACwigMRQMrGgAqhWAEVgAY0ACKBmjGgCCwgAUARQO51CAVEQSRgDEUAFaACIgEK0AGIgACgCKoBEAEQCVOIGQ0ACSoBEAgQCSQOzUZjQFIgDEgKSBClUGSsQBVAFgaoAIoAjYgZRABEAkiDNRVgMg4sAIgAigZKQO0Oswg0WI3ICJxAMRQBFAAQASQJJAkQCBABEAKGgAKUBCpAClQZUKoAUgAkgdVBGoBkb5ZjcBJIEkgFqVQIFQAsVQBJAqkgQKAIgEMKoMooGUiCBVAAgBWWqABBB0jUEMAtMyECRKQSSBDCgCSAIoBQ0ACSBAgFUkCxEAEkARQBEUBRTQARADEcINpQgY0zCBhRgJIgEqgCIALCqADQBlGoGSkCSQIFYAqwoBipxAyqaKDNGNAEEAKGkHRIgikBLMMBrVrJA6ggISkBKnABFSAUNUABSASKBLEgSKAUUoGaK0yABtQAFkFqRB0IQEaVgGKKEEgQTTJgFKIEkgCIBCkAEcQBFAIUgVUKAA0UAzWrBQGCkAKyRQUQwg6onABBBEEAkgMIQGEQgkCCFIBJIEkgCSBRJAUEBrNIAA6ATNIACkUAUgdSIgIQBoswgiogSSAxAwEQQWJIAkAKBoBJAloANLWUBCVAVJaAVVQCs1qigylqB1KQJJAikBUKAakgRSBFIEggSSBJIAKUDNCQFFANCQEYkAsSQM6zSgZKQP/9k='); /* update path */
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.stat-box {
+  text-align: center;
+  color: white;
+  padding: 10px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.stat-box:nth-child(4),
+.stat-box:nth-child(8) {
+  border-right: none; /* Remove last border in each row */
+}
+
+.stat-box .icon {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.stat-box h2 {
+  font-size: 48px;
+  color: #00e3d8;
+  margin: 0;
+  font-weight: 700;
+}
+
+.stat-box p {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+
+
+.alumni-section {
+  padding: 40px 20px;
+  background-color: #f5f7fa;
+  text-align: center;
+}
+
+.alumni-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.alumni-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.alumni-card {
+  background: white;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 10px 15px 25px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.alumni-card:hover {
+  transform: translateY(-5px);
+}
+
+.alumni-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.alumni-name {
+  color: #555;
+  font-size: 15px;
+  text-align: left;
+  margin: 10px 0 5px;
+}
+
+.alumni-desc {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.read-btn {
+  background: blue;
+  color: white;
+  padding: 6px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.read-btn:hover {
+  background: darkblue;
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+  display: block;
+}
+
+.footer-section {
+  background-color: #2b2e59;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  max-width: 300px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #14e0e4;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  color: #ccc;
+  font-size: 15px;
+}
+
+.footer-column ul li:hover {
+  color: #fff;
+  cursor: pointer;
+}
