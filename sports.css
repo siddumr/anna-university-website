@@ -1,0 +1,457 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+}
+
+.topbar {
+    background: #143163;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    height: 75px;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.au-logo {
+    width: 70px;
+    height: 70px;
+}
+
+.site-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.sports-logo {
+    width: 70px;
+    height: 70px;
+    margin-left: 18px;
+}
+
+.navbar {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.navbar a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 0;
+    transition: color 0.2s;
+}
+
+.navbar a:hover {
+    color: #fcc31b;
+}
+
+.search-icon, .menu-icon {
+    font-size: 19px;
+    margin-left: 8px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    margin-top: 10px;
+    width: 92%;
+}
+
+.center-image {
+    position: relative;
+    width: 4100px;
+    height: 640px;
+    overflow: hidden;
+    border-radius: 7px;
+    box-shadow: 0 1px 7px #0002;
+}
+
+.center-image .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    border-radius: 7px;
+    object-fit: cover;
+}
+
+.center-image .slide.active {
+    opacity: 1;
+    position: relative;
+}
+
+
+.main-img {
+    width: 630px;
+    height: 440px;
+    border-radius: 7px;
+    object-fit: cover;
+    box-shadow: 0 1px 7px #0002;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.news, .screen-reader {
+    background: #163466;
+    color: #fff;
+    padding: 18px 20px 18px 20px;
+    border-radius: 8px;
+    min-width: 260px;
+    box-shadow: 0 2px 8px #0001;
+}
+
+.news h2,
+.screen-reader h2 {
+    margin: 0 0 10px 0;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    border-bottom: 1.2px solid #fff3;
+    padding-bottom: 7px;
+}
+
+.news hr,
+.screen-reader hr {
+    border: none;
+    height: 1px;
+    background: #fff3;
+    margin-bottom: 8px;
+}
+
+.news p {
+    color: #fcc31b;
+    font-size: 15px;
+    margin: 0;
+}
+
+.news a {
+    color: #fcc31b;
+    text-decoration: none;
+}
+
+.screen-reader ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.screen-reader li {
+    font-size: 15px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.link-icon,
+.zoom-icon,
+.fit-icon {
+    font-size: 16px;
+}
+
+@media (max-width: 1000px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    .center-image .main-img {
+        width: 93vw;
+        height: auto;
+    }
+    aside {
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+/* DROPDOWN EVENTS STYLE */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    color: #fff;
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 230px;
+    box-shadow: 0 4px 16px rgba(32,40,71,0.15);
+    border-radius: 8px;
+    z-index: 10;
+    margin-top: 3px;
+    padding: 6px 0;
+}
+
+.dropdown-content a {
+    color: #223158;
+    padding: 10px 22px;
+    text-decoration: none;
+    display: block;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background 0.13s, color 0.13s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f7fafc;
+    color: #143163;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: #fcc31b !important;
+}
+.screen-reader-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.screen-reader-list li {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin: 13px 0;
+    color: #ffe082;
+    gap: 10px;
+}
+
+.screen-reader-list .link-icon {
+    font-size: 21px;
+    color: #ffe082;
+}
+
+.screen-reader-list .badge {
+    display: inline-block;
+    background: #ffd369;
+    color: #263159;
+    border-radius: 6px;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 17px;
+    min-width: 34px;
+    text-align: center;
+    box-shadow: 0 2px 4px #0001;
+    padding: 3px 8px;
+    margin-right: 5px;
+    letter-spacing: 1px;
+}
+
+.screen-reader-list .sr-label,
+.screen-reader-list .link-label {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.sports-insights {
+  background-color: #143163;
+  padding: 40px 20px 20px;
+  text-align: center;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sports-insights h2 {
+  font-weight: 700;
+  margin-bottom: 30px;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+}
+
+.insights-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.insight-card {
+  background: white;
+  color: #223158;
+  width: 320px;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgb(0 0 0 / 0.08);
+  padding: 15px 20px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.insight-card:hover {
+  box-shadow: 0 6px 18px rgb(0 0 0 / 0.15);
+}
+
+.insight-card img {
+  width: 100%;
+  border-radius: 6px;
+  max-height: 220px;
+  object-fit: cover;
+}
+
+.insight-card h3 {
+  font-weight: 700;
+  color: #0d1c4e;
+  font-size: 16px;
+  margin: 0;
+}
+
+.insight-card p {
+  font-size: 14px;
+  color: #385085;
+  line-height: 1.4;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.read-more {
+  color: #143163;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .insights-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .insight-card {
+    width: 90%;
+    max-width: 480px;
+  }
+}
+.latest-notifications-section {
+  background-color: #143163;
+  padding: 40px 0 0 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  text-align: center;
+}
+
+.notifications-title {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  margin-bottom: 24px;
+}
+
+/* This is where the background image is applied! */
+.notifications-bg {
+  background: url('turf.jpg') center/cover no-repeat;
+  padding: 60px 0 60px 0;
+  min-height: 420px;
+  width: 100%;
+}
+
+.notifications-container {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.notification-card {
+  background: #21376f;
+  color: #fff;
+  min-width: 320px;
+  max-width: 350px;
+  border-radius: 13px;
+  box-shadow: 0 8px 36px 0 rgb(30 54 102 / 12%);
+  padding: 10px 25px 20px 25px;
+  text-align: left;
+  margin-bottom: 30px;
+  border: none;
+  position: relative;
+}
+
+.notification-header {
+  font-weight: 600;
+  font-size: 17px;
+  margin-top: 16px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: left;
+  border-bottom: 2px solid #ffce54;
+  padding-bottom: 7px;
+}
+
+.notification-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notification-list li {
+  margin: 11px 0;
+  font-size: 15px;
+}
+
+.notification-list a {
+  color: #ffdd86;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.notification-list a:hover {
+  text-decoration: underline;
+  color: #fff8e1;
+}
+
+@media (max-width: 1050px) {
+  .notifications-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+  .notification-card {
+    width: 90%;
+    min-width: unset;
+    max-width: 480px;
+  }
+}

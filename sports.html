@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna University Sports Board</title>
+    <link rel="stylesheet" href="sports.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="logo-container">
+            <img src="Logo-1.png" alt="AU Logo" class="au-logo">
+            <span class="site-title">Anna University Sports Board</span>
+        </div>
+        <img src="AUSB LOGO.png" alt="Sports Logo" class="sports-logo">
+        <nav class="navbar">
+    <a href="index.html">Home</a>
+
+    <div class="dropdown">
+        <a href="#" class="dropbtn">About Us</a>
+        <div class="dropdown-content">
+            <a href="#">About AUSB</a>
+            <a href="#">Colleges</a>
+            <a href="#">Chairman-Message</a>
+            <a href="#">Officials</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a href="#" class="dropbtn">Events</a>
+        <div class="dropdown-content">
+            <a href="#">Zonal</a>
+            <a href="#">InterZonal</a>
+            <a href="#">InterUniversity</a>
+            <a href="#">Annual Award Functions</a>
+            <a href="#">Zonal Achievers</a>
+            <a href="#">Alumni Gallery</a>
+            <a href="#">News and Events</a>
+            <a href="#">Zonal Co-ordinator</a>
+            <a href="#">College Zone Wise</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a href="#" class="dropbtn">Achievements</a>
+        <div class="dropdown-content">
+            <a href="#">2024-2025</a>
+            <a href="#">2022-2023</a>
+            <a href="#">2021-2022</a>
+            <a href="#">2020-2021</a>
+            <a href="#">2019-2020</a>
+            <a href="#">2018-2017</a>
+            <!-- Add more if needed -->
+        </div>
+    </div>
+
+    <a href="#">Contact</a>
+
+    <div class="dropdown">
+        <a href="#" class="dropbtn">Resources</a>
+        <div class="dropdown-content">
+            <a href="#">Links</a>
+            <a href="#">360 View</a>
+            <a href="#">AU HOME</a>
+        </div>
+    </div>
+
+    <a href="#"><span class="search-icon">&#128269;</span></a>
+    <a href="#"><span class="menu-icon">&#9776;</span></a>
+</nav>
+
+    </header>
+
+    <main>
+        <div class="main-content">
+            <div class="center-image slider">
+    <img src="slide 1.png" alt="Slide 1" class="slide active">
+    <img src="slide 2.jpg" alt="Slide 2" class="slide">
+    <img src="slide 3.jpg" alt="Slide 3" class="slide">
+</div>
+
+            <aside>
+                <div class="news">
+                    <h2>Latest News and Events</h2>
+                    <hr>
+                    <p>
+  <a href="./Annual_Award_Function_Booklet_2023_24.pdf" target="_blank">Annual Award Booklet 2023-24</a>
+</p>
+
+                </div>
+                <div class="screen-reader">
+                    <h2>Screen Reader</h2>
+                    <hr>
+                    <ul class="screen-reader-list">
+    <li>
+        <span class="link-icon">&#128279;</span>
+        <span class="sr-label link-label">Links</span>
+    </li>
+    <li>
+        <span class="badge">A+</span>
+        <span class="sr-label">Zoom in</span>
+    </li>
+    <li>
+        <span class="badge">A</span>
+        <span class="sr-label">Fit to Screen</span>
+    </li>
+    <li>
+        <span class="badge">A-</span>
+        <span class="sr-label">Zoom out</span>
+    </li>
+</ul>
+
+                </div>
+            </aside>
+        </div>
+    </main>
+    <script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.center-image .slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  setInterval(nextSlide, 3000); // Change image every 3 seconds
+
+  // Show the initial slide
+  showSlide(currentSlide);
+</script>
+<section class="sports-insights">
+  <h2>SPORTS INSIGHTS</h2>
+  <div class="insights-container">
+    <article class="insight-card">
+      <img src="basketball.png" alt="Football" />
+      <h3>Football (M &amp; W)</h3>
+      <p>
+        Matches shall be played according to the rules of the All India Football Federation / Women's Football Federation, unless otherwise modified in these rules.
+      </p>
+      <a href="#" class="read-more">Read More &gt;&gt;</a>
+    </article>
+    <article class="insight-card">
+      <img src="Tennis.png" alt="Hockey" />
+      <h3>Hockey(M &amp; W)</h3>
+      <p>
+        The matches shall be played according to the rules as adopted by indian Hockey Federation Indian Women's Hockey Federation unless otherwise modified in these rules.
+      </p>
+      <a href="#" class="read-more">Read More &gt;&gt;</a>
+    </article>
+    <article class="insight-card">
+      <img src="Volleyball.png" alt="Volleyball" />
+      <h3>Volleyball (M &amp; W)</h3>
+      <p>
+        The rules as adopted by the Volleyball Federation of India shall be followed, unless otherwise modified in these rules.
+      </p>
+      <a href="#" class="read-more">Read More &gt;&gt;</a>
+    </article>
+  </div>
+</section>
+<section class="latest-notifications-section">
+  <h2 class="notifications-title">LATEST-NOTIFICATIONS</h2>
+  <div class="notifications-bg">
+    <div class="notifications-container">
+      <!-- Zonal -->
+      <div class="notification-card">
+        <div class="notification-header">Zonal</div>
+        <ul class="notification-list">
+          <li><a href="#">›› Zonal Sports co-ordinators and Secretaries 2024-25</a></li>
+          <li><a href="#">›› Zonal Sports co-ordinators and Secretaries 2017-18</a></li>
+          <li><a href="#">›› Athletic Entry Form 2017-18</a></li>
+          <li><a href="#">›› Eligibility Criteria For Student Participants 2017-18</a></li>
+          <li><a href="#">›› Eligibility Proforma</a></li>
+          <li><a href="#">›› Zonal Booklet 2017-18</a></li>
+        </ul>
+      </div>
+      <!-- InterZonal -->
+      <div class="notification-card">
+        <div class="notification-header">InterZonal</div>
+        <ul class="notification-list">
+          <li><a href="#">›› Inter Zonal Tournaments / Selection Trails - List of Games</a></li>
+          <li><a href="#">›› Inter Zone Calendar 2017-18</a></li>
+          <li><a href="#">›› Athletic Entry Form 2017-18</a></li>
+          <li><a href="#">›› Profile of Physical Director</a></li>
+          <li><a href="#">›› Inter Zone Booklet</a></li>
+          <li><a href="#">›› Annual Sports Award Function 2016-17</a></li>
+        </ul>
+      </div>
+      <!-- InterUniversity -->
+      <div class="notification-card">
+        <div class="notification-header">InterUniversity</div>
+        <ul class="notification-list">
+          <li><a href="#">All India &amp; South Zone Inter University 2017-2018</a></li>
+          <li><a href="#">Athletic Entry Form 2017-18</a></li>
+          <li><a href="#">Eligibility Criteria For Student Participants 2017-18</a></li>
+          <li><a href="#">Eligibility Proforma</a></li>
+          <li><a href="#">National Sports Calendar 2017 - 18</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="about-section">
+  <h2>ABOUT US</h2>
+  <div class="about-content-container">
+    <img src="Hand.png" alt="Pointing Hand" class="about-hand-icon" />
+    <div class="about-slide about-slide-1 active">
+      <h3>Aims and Objectives :-</h3>
+      <p>
+        To encourage sportsmanship and healthy competitions among the colleges involved. To organize Zonal and Inter-Zonal tournaments in the recognized games and sports, towards selection of University Teams. To raise the general standards of sports and games towards achievement in Inter-University / National / Inter-National tournaments. To organize the National Sports Organisation programme for the total personality development of all students in order to serve the community towards its advancement. To encourage such other activities which may be conducive to the aims and objectives of AUSB.
+      </p>
+      <h3>Paralympic Sports Meet :</h3>
+      <p>
+        To take care of the physically challenged students of Anna University who have interest in sports and games, special tournaments are organized once in a year, under one-zone basis, in athletics and other games, depending on the entries received.
+      </p>
+      <button id="nextslide" type="button">Next Slide</button>
+    </div>
+  </div>
+</section>
+
+<style>
+.about-section {
+  background-color: #143163;
+  padding: 34px 0 50px 0;
+  color: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-section h2 {
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.about-content-container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  background: #21376f;
+  border-radius: 10px;
+  padding: 24px 38px;
+  box-shadow: 0 8px 36px rgb(30 54 102 / 12%);
+  text-align: left;
+  min-height: 2px;
+}
+
+.about-hand-icon {
+  width: 600px;
+  min-width: 290px;
+  height: auto;
+  user-select: none;
+  flex-shrink: 0;
+  margin-right: 14px;
+  margin-top: 15px;
+  position: absolute;
+  left: -130px;           /* You can adjust this value for perfect horizontal placement */
+  top: 32px;            /* You can adjust this for vertical placement */
+  z-index: 0;
+  opacity: 0.40;        /* make it faint and behind */
+}
+
+.about-slide-1 {
+  flex: 1 1 0%;
+  color: #f1f7ff;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.about-slide-1 h3 {
+  color: #f5bf62;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 8px;
+  margin-bottom: 14px;
+}
+
+#nextslide {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 18px;
+  font-size: 13px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s ease;
+  margin-top: 18px;
+  float: right;
+}
+
+#nextslide:hover {
+  background-color: #0069d9;
+}
+
+@media (max-width: 800px) {
+  .about-content-container {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px 10px;
+    gap: 0;
+  }
+  .about-hand-icon {
+    margin: 0 auto 12px auto;
+    display: block;
+  }
+}
+</style>
+
+<!-- Footer Section -->
+<footer class="footer-section">
+  <div class="footer-content">
+    <div class="footer-item">
+      <p class="footer-title">AUSB HOME</p>
+      <a href="https://www.annauniv.edu/sports" target="_blank" class="footer-link">www.annauniv.edu/sports</a>
+    </div>
+    <div class="footer-item">
+      <p class="footer-title">EMAIL</p>
+      <p class="footer-text">ausb@annauniv.edu</p>
+    </div>
+    <div class="footer-item">
+      <p class="footer-title">AU HOME</p>
+      <a href="https://www.annauniv.edu" target="_blank" class="footer-link">www.annauniv.edu</a>
+    </div>
+    <div class="footer-item">
+      <p class="footer-title">LINKS</p>
+      <p class="footer-text">Sitemap</p>
+    </div>
+    <div class="footer-item">
+      <p class="footer-title">CONTACT US</p>
+      <p class="footer-text">(044) 2235 8105</p>
+      <p class="footer-text">(044) 2235 8106</p>
+    </div>
+  </div>
+  <div class="footer-copy">
+    &copy; COPYRIGHT 2021 ALL RIGHTS RESERVED
+  </div>
+</footer>
+
+<style>
+.footer-section {
+  background-color: #143163;
+  color: #fff;
+  padding: 25px 0 12px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto 12px;
+}
+
+.footer-item {
+  flex: 1 1 150px;
+  margin: 10px 5px;
+  min-width: 130px;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.footer-link {
+  color: #1766db;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-text {
+  color: #ffd66b;
+  font-size: 14px;
+  margin: 0 0 4px 0;
+}
+
+.footer-copy {
+  font-size: 13px;
+  color: #d0d7e6;
+  margin-top: 10px;
+}
+
+/* Responsive: stack columns on mobile */
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-item {
+    margin: 8px 0;
+    text-align: center;
+  }
+}
+</style>
+
+
+</body>
+</html>
